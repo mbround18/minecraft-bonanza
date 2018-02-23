@@ -1,0 +1,16 @@
+<app-header
+  [serverName]="serverName"
+  [bonanzaEventActive]="bonanzaEventActive"
+  (mapTabActive)="switchTabs($event)">
+</app-header>
+<app-home
+  [serverName]="serverName"
+  [serverAddress]="serverAddress"
+  [discordUrl]="discordUrl"
+  [bonanzaEventActive]="bonanzaEventActive"
+  [hidden]="!homeTabActive">
+</app-home>
+<app-map
+  [serverMapAddress]="serverMapAddress"
+  [hidden]="homeTabActive">
+</app-map>

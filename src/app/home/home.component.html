@@ -1,0 +1,60 @@
+<div
+  class="uk-grid uk-flex uk-flex-column uk-width-1-1 uk-width-3-4@s uk-width-2-3@m uk-width-2-3@l uk-width-1-2@xl uk-margin-top uk-align-center">
+  <div>
+    <div class="uk-card uk-card-default">
+
+    </div>
+    <div class="uk-card uk-card-default">
+
+      <div class="uk-card-media-top">
+        <h1 class="uk-heading-divider">Welcome To {{ serverName }}!!!</h1>
+        <!--<h1 class="uk-h1" style="padding-top: 0.5em; padding-left: 0.5em;">Welcome To {{ serverName }}!!!</h1>-->
+        <img class="uk-align-center uk-responsive-height uk-responsive-width"
+             src="https://c2.staticflickr.com/8/7305/12844824643_d337810b76_b_d.jpg" alt="">
+      </div>
+      <div class="uk-card-body">
+        <hr>
+        <div id="countdownClock" [hidden]="bonanzaEventActive">
+          <h3 class="uk-h3">Whoooaaahh! Unfortunately, {{ serverName }} is expected to launch in: </h3>
+          <div class="uk-card-body uk-align-center" uk-responsive>
+            <div class="uk-grid uk-grid-small uk-child-width-auto uk-responsive-width "
+                 uk-countdown="date: 2018-02-24T00:00:00-08:00">
+              <div>
+                <div class="uk-countdown-number uk-countdown-days"></div>
+                <div class="uk-countdown-label uk-text-center uk-margin-small-top uk-visible@s">Days</div>
+              </div>
+              <div class="uk-countdown-separator">:</div>
+              <div>
+                <div class="uk-countdown-number uk-countdown-hours"></div>
+                <div class="uk-countdown-label uk-text-center uk-margin-small-top uk-visible@s">Hours</div>
+              </div>
+              <div class="uk-countdown-separator">:</div>
+              <div>
+                <div class="uk-countdown-number uk-countdown-minutes"></div>
+                <div class="uk-countdown-label uk-text-center uk-margin-small-top uk-visible@s">Minutes</div>
+              </div>
+              <div class="uk-countdown-separator">:</div>
+              <div>
+                <div class="uk-countdown-number uk-countdown-seconds"></div>
+                <div class="uk-countdown-label uk-text-center uk-margin-small-top uk-visible@s">Seconds</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="launchInformation" [hidden]="!bonanzaEventActive">
+          <p>Hello! Welcome to the first ever Minecraft Bonanza!!! Hosted by Gamer Drop Zone! Connection info is
+            below: </p>
+          <div>Server Address: <a
+            (click)="serverAddressCopiedtoClipboard()"
+            ngxClipboard
+            [cbContent]="serverAddress">
+            {{ serverAddress }}</a>
+          </div>
+          <div>Discord Server: <a [href]="discordUrl">{{ discordUrl }}</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

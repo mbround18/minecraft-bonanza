@@ -1,0 +1,16 @@
+.uk-navbar-container a {
+  color: white;
+}
+.uk-active {
+  background: #1d6ab7;
+  border-radius: 35%;
+}
+.uk-navbar-container {
+  background-color: #2294f2;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}

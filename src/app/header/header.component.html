@@ -1,0 +1,11 @@
+<nav class="uk-navbar-container uk-margin" uk-navbar>
+  <div class="uk-navbar-left">
+    <a class="uk-navbar-item uk-logo" href="/">{{ serverName }}</a>
+    <div class="uk-navbar-left">
+      <ul class="uk-navbar-nav">
+        <li [ngClass]="{'uk-active': homeTabActive}" (click)="switchTabs('home')"><a href="#">Home</a></li>
+        <li [ngClass]="{'uk-active': !homeTabActive}" (click)="switchTabs('map')"><a href="#">Map</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
