@@ -1,0 +1,94 @@
+.align-children * {
+  text-align: center;
+}
+
+@media only screen and (min-width: 1025px) {
+  *[class*="uk-countdown-number"] {
+    margin: 0;
+    padding: 0;
+    /*padding: .1em;*/
+    font-size: 4em !important;
+  }
+  *[class*="uk-countdown-label"] {
+    margin: 0;
+    padding: 0;
+    /*padding: .1em;*/
+    font-size: 2em !important;
+  }
+  *[class*="uk-countdown-separator"] {
+    margin: 0;
+    padding: 0;
+    /*padding: .1em;*/
+    font-size: 2em !important;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  *[class*="uk-countdown-number"] {
+    margin: 0;
+    padding: 0;
+    /*padding: .1em;*/
+    font-size: 3em !important;
+  }
+  *[class*="uk-countdown-label"] {
+    margin: 0;
+    padding: 0;
+    /*padding: .1em;*/
+    font-size: 1.5em !important;
+  }
+  *[class*="uk-countdown-separator"] {
+    margin: 0;
+    padding: 0;
+    /*padding: .1em;*/
+    font-size: 2em !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  *[class*="uk-countdown-number"] {
+    font-size: 2.5em !important;
+  }
+  *[class*="uk-countdown-separator"] {
+    font-size: 1.5em !important;
+  }
+  *[class*="uk-countdown-label"] {
+    display: block;
+    visibility: visible;
+    font-size: 1em !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  *[class*="uk-countdown-number"] {
+    /*padding: .1em;*/
+    font-size: 2.5em !important;
+  }
+  *[class*="uk-countdown-separator"] {
+    display: none;
+    visibility: hidden;
+  }
+  *[class*="uk-countdown-label"] {
+    font-size: 1em !important;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  *[class*="uk-countdown-number"] {
+    font-size: 1em !important;
+  }
+  *[class*="uk-countdown-label"] {
+    font-size: 1em !important;
+  }
+}
+
+
+@media only screen and (max-width: 380px) {
+  *[class*="uk-countdown-number"] {
+    font-size: 2em !important;
+  }
+  *[class*="uk-countdown-label"] {
+    font-size: 1em !important;
+  }
+
+}
